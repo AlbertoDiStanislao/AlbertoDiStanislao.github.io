@@ -1,1 +1,105 @@
 <!--My File-->
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title> Alberto's awkward site</title>
+      <style>
+         body {
+             background: rgba(34, 32, 32, 0.814);
+             color: rgba(0, 0, 0, 0.76);
+             padding: 10px;
+             font-family: arial;
+         }
+         #all-contents {
+           max-width: 800px;
+             margin: auto;
+         }
+      
+         /* navigation menu */
+         nav {
+             background: rgba(0, 68, 255, 0.882);
+            margin: 0 auto;
+            margine-bottom: 20px
+             display: flex;
+             padding: 10px;
+         }
+         h1 {
+             display: flex;
+             align-items: center;
+             color: rgba(85, 255, 0, 0.779);
+             flex: 1;
+             margin: 0;
+         }
+         #nav-ul {
+             list-style-image: none;
+         }
+         .nav-li {
+             display: inline-block;
+             padding: 0 10px;
+         }
+         a {
+             text-decoration: none;
+             color: rgb(255, 255, 255);
+         }
+      
+         /* main container area beneath menu */
+         main {
+             background: rgba(255, 255, 255, 0.85);
+             display: flex;
+         }
+         .sidebar {
+             margin-right: 25px;
+             padding: 10px;
+         }
+         .sidebar-img {
+             width: 200px;
+         }
+         .content {
+             flex: 1;
+             padding: 15px;
+         }
+         #interests {
+             border: 4px rgb(189, 188, 188) ridge;
+             padding: 8px;
+         }
+         h2, h3 {
+             margin: 0px;
+         }
+      </style>
+   </head>
+   <body>
+    <!--visible html elements go here-->
+      <div id="all-contents">
+         <nav>
+            <h1>Alberto's Special Website</h1>
+            <ul id="nav-ul">
+               <li class="nav-li"><a href="index.html">Home</a>
+                </li>
+               <li class="nav-li"><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+         </nav>
+         <main>
+             <!--side baresection-->
+             <div class="sidebar">
+                <img class="sidebar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juventus_FC_2017_icon_%28black%29.svg/110px-Juventus_FC_2017_icon_%28black%29.svg.png">
+             </div>
+ 
+             <!--content section-->
+             <div class="content">
+                <h2>Alberto Di Stanislao</h2>
+                <p>Student at Mandeville High School</p>
+             </div>
+        <!--Interesting section-->
+         <div id="interests">
+            <h3>Interests</h3>
+            <ul>
+               <li>I enjoy playing soccer</li>
+               <li>I play a lot of video games</li>
+               <li>I am interested in making a game</li>
+            </ul>
+         </div>
+        </main>
+      </div>
+   </body>
+</html>
