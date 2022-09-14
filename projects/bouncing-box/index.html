@@ -74,6 +74,12 @@
 				/*code increase positionX here*/
 				positionX = positionX + speed;
 				moveBoxTo(positionX);
+				if (positionX > 1300) {
+					speed = -speed
+				}
+				else if (positionX < 0){
+					speed = -speed
+				}
 				
 
 			};
@@ -86,8 +92,13 @@
 			function handleBoxClick() {
 				positionX = 0;
 				points = points +1;
-				speed = speed + 3;
 				changeBoxText (points);
+				if (speed > 0){
+					speed = speed + 3
+				}
+				else if (speed < 0){
+					speed = speed - 3
+				}
 			
 			};
 		})();
