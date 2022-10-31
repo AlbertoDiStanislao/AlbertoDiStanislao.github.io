@@ -56,7 +56,7 @@ var background = function (window) {
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
             for (var i = 0; i < 10; ++i) {
-                var buildingHeight = Math.random();
+                var buildingHeight = Math.random() * 350;
                 var building = draw.rect(75, buildingHeight, "LightGray", "Black", 1);
                 building.x = 200 * i;
                 building.y = groundY - buildingHeight;
@@ -89,8 +89,12 @@ var background = function (window) {
             }
             
             // TODO 5: Part 2 - Parallax
+            building.x = building.x - 1
+            if (building.x < 0){
+                building.x = canvasWidth;
+            }
+                
             
-
         } // end of update function - DO NOT DELETE
         
         
