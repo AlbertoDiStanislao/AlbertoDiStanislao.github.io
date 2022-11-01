@@ -36,7 +36,7 @@ var background = function (window) {
             // TODO: 2 - Part 2
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth,305,'red');
+            var backgroundFill = draw.rect(canvasWidth,305,'black');
             background.addChild(backgroundFill);
             
             // TODO: 3 - Add a moon and starfield
@@ -57,7 +57,7 @@ var background = function (window) {
             
             for (var i = 0; i < 10; ++i) {
                 var buildingHeight = Math.random() * 350;
-                var building = draw.rect(75, buildingHeight, "LightGray", "Black", 1);
+                var building = draw.rect(75, buildingHeight, "white", "Black", 1);
                 building.x = 200 * i;
                 building.y = groundY - buildingHeight;
                 background.addChild(building);
@@ -89,12 +89,15 @@ var background = function (window) {
             }
             
             // TODO 5: Part 2 - Parallax
-            building.x = building.x - 1
-            if (building.x < 0){
-                building.x = canvasWidth;
-            }
-                
             
+            }
+            for (var i = 0; i < buildings.length; i++){
+                var build = buildings[i]
+                building.x = building.x - 1
+                    if (building.x < 0){
+                    building.x = canvasWidth;
+            }
+               
         } // end of update function - DO NOT DELETE
         
         
