@@ -159,8 +159,17 @@ var level01 = function (window) {
                 createReward(2600, groundY - 250);
 
                 for (var i = 0; i < levelData.gameItems.length; i++){
-                    if (levelData.gameItems[i] == "sawblade") {
-                        
+                    if (levelData.gameItems[i].type === "sawblade") {
+                        createSawBlade(levelData.gameItems[i].x, levelData.gameItems[i].y)
+                    }
+                    else if (levelData.gameItems[i].type === "cyberPunk") {
+                        sandevistated(levelData.gameItems[i].x, levelData.gameItems[i].y)
+                    }
+                    else if (levelData.gameItems[i].type === "enemy") {
+                        createEnemy(levelData.gameItems[i].x, levelData.gameItems[i].y)
+                    }
+                    else if (levelData.gameItems[i].type === "reward") {
+                        createReward(levelData.gameItems[i].x, levelData.gameItems[i].y)
                     }
                 }
                 
