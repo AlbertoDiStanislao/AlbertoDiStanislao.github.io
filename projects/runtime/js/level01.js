@@ -136,11 +136,14 @@ var level01 = function (window) {
     for (var i = 0; i < levelData.gameItems.length; i++) {
       if (levelData.gameItems[i].type === "sawblade") {
         createSawBlade(levelData.gameItems[i].x, levelData.gameItems[i].y);
-      } else if (levelData.gameItems[i].type === "cyberPunk") {
+      } 
+      else if (levelData.gameItems[i].type === "cyberPunk") {
         sandevistated(levelData.gameItems[i].x, levelData.gameItems[i].y);
-      } else if (levelData.gameItems[i].type === "enemy") {
+      } 
+      else if (levelData.gameItems[i].type === "enemy") {
         createEnemy(levelData.gameItems[i].x, levelData.gameItems[i].y);
-      } else if (levelData.gameItems[i].type === "reward") {
+      } 
+      else if (levelData.gameItems[i].type === "reward") {
         createReward(levelData.gameItems[i].x, levelData.gameItems[i].y);
       }
     }
